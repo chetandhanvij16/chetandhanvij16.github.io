@@ -23,10 +23,10 @@
         <button id="login">login</button>
         <script type="text/javascript">
             document.getElementById("exit").addEventListener("click", function(){
-                webview.Close(null,null,['exit']);
+                webview.Close(null,null,['killSession=Y&RedirPageId=exit']);
             });
             document.getElementById("login").addEventListener("click", function(){
-                webview.Close(null,null,['login']);
+                webview.Close(null,null,['killSession=Y&RedirPageId=login']);
             });
         </script>
 	</body>
